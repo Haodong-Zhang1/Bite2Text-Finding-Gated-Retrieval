@@ -117,4 +117,4 @@ All source references below are relative to the original project root. They iden
 
 ## Outstanding information
 
-The complete training wall time, historical training CPU model/RAM, public release URLs, project license, upstream checkpoint redistribution requirements, dataset redistribution terms, and a complete public reproduction guide remain unverified or unavailable. These gaps do not change the implemented architecture described above, but they should not be filled with inferred values.
+The complete training wall time, historical training CPU model/RAM, project license, dataset redistribution terms, and a complete public reproduction guide remain unverified or unavailable. Public source and parameter download links are provided in the repository README. These gaps do not change the implemented architecture described above, but they should not be filled with inferred values.
