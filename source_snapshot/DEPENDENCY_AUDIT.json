@@ -1,0 +1,195 @@
+{
+  "entrypoint": "inference.py",
+  "training_core_roots": [
+    "vlm_lite/photo_residual.py",
+    "baselines/vc_fulltrain_model.py"
+  ],
+  "project_source_files": [
+    "baselines/vc_fulltrain_model.py",
+    "baselines/vc_sentence_surgery_runtime.py",
+    "parsing/schema_parser.py",
+    "submission/bitevlm_lite_v2/__init__.py",
+    "submission/bitevlm_lite_v2/inference.py",
+    "submission/bitevlm_lite_v3_attempt05/__main__.py",
+    "submission/mesh_retrieval_v1/mesh_retrieval_runtime.py",
+    "vlm_lite/fact_rerank_runtime_v1.py",
+    "vlm_lite/g0_probability_runtime_v2.py",
+    "vlm_lite/per_case_fail_open_runtime_v1.py",
+    "vlm_lite/photo_encoder_runtime_v1.py",
+    "vlm_lite/photo_residual.py",
+    "vlm_lite/production_runtime_v1.py",
+    "vlm_lite/tooth_finding_gate_v1.py"
+  ],
+  "project_import_edges": [
+    {
+      "from": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+      "import": "submission.bitevlm_lite_v2",
+      "resolved_source": "submission/bitevlm_lite_v2/__init__.py"
+    },
+    {
+      "from": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+      "import": "submission.bitevlm_lite_v2.inference",
+      "resolved_source": "submission/bitevlm_lite_v2/inference.py"
+    },
+    {
+      "from": "submission/bitevlm_lite_v2/inference.py",
+      "import": "vlm_lite.photo_encoder_runtime_v1",
+      "resolved_source": "vlm_lite/photo_encoder_runtime_v1.py"
+    },
+    {
+      "from": "submission/bitevlm_lite_v2/inference.py",
+      "import": "vlm_lite.production_runtime_v1",
+      "resolved_source": "vlm_lite/production_runtime_v1.py"
+    },
+    {
+      "from": "vlm_lite/production_runtime_v1.py",
+      "import": "baselines.vc_sentence_surgery_runtime",
+      "resolved_source": "baselines/vc_sentence_surgery_runtime.py"
+    },
+    {
+      "from": "baselines/vc_sentence_surgery_runtime.py",
+      "import": "parsing.schema_parser",
+      "resolved_source": "parsing/schema_parser.py"
+    },
+    {
+      "from": "vlm_lite/production_runtime_v1.py",
+      "import": "parsing.schema_parser",
+      "resolved_source": "parsing/schema_parser.py"
+    },
+    {
+      "from": "vlm_lite/production_runtime_v1.py",
+      "import": "submission.mesh_retrieval_v1.mesh_retrieval_runtime",
+      "resolved_source": "submission/mesh_retrieval_v1/mesh_retrieval_runtime.py"
+    },
+    {
+      "from": "vlm_lite/production_runtime_v1.py",
+      "import": "vlm_lite.g0_probability_runtime_v2",
+      "resolved_source": "vlm_lite/g0_probability_runtime_v2.py"
+    },
+    {
+      "from": "vlm_lite/g0_probability_runtime_v2.py",
+      "import": "baselines.vc_fulltrain_model",
+      "resolved_source": "baselines/vc_fulltrain_model.py"
+    },
+    {
+      "from": "baselines/vc_fulltrain_model.py",
+      "import": "parsing.schema_parser",
+      "resolved_source": "parsing/schema_parser.py"
+    },
+    {
+      "from": "vlm_lite/g0_probability_runtime_v2.py",
+      "import": "parsing.schema_parser",
+      "resolved_source": "parsing/schema_parser.py"
+    },
+    {
+      "from": "vlm_lite/production_runtime_v1.py",
+      "import": "vlm_lite.photo_encoder_runtime_v1",
+      "resolved_source": "vlm_lite/photo_encoder_runtime_v1.py"
+    },
+    {
+      "from": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+      "import": "submission.mesh_retrieval_v1.mesh_retrieval_runtime",
+      "resolved_source": "submission/mesh_retrieval_v1/mesh_retrieval_runtime.py"
+    },
+    {
+      "from": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+      "import": "tooth_finding_gate_v1",
+      "resolved_source": "vlm_lite/tooth_finding_gate_v1.py"
+    },
+    {
+      "from": "vlm_lite/tooth_finding_gate_v1.py",
+      "import": "baselines.vc_sentence_surgery_runtime",
+      "resolved_source": "baselines/vc_sentence_surgery_runtime.py"
+    },
+    {
+      "from": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+      "import": "vlm_lite.fact_rerank_runtime_v1",
+      "resolved_source": "vlm_lite/fact_rerank_runtime_v1.py"
+    },
+    {
+      "from": "vlm_lite/fact_rerank_runtime_v1.py",
+      "import": "baselines.vc_sentence_surgery_runtime",
+      "resolved_source": "baselines/vc_sentence_surgery_runtime.py"
+    },
+    {
+      "from": "vlm_lite/fact_rerank_runtime_v1.py",
+      "import": "parsing.schema_parser",
+      "resolved_source": "parsing/schema_parser.py"
+    },
+    {
+      "from": "vlm_lite/fact_rerank_runtime_v1.py",
+      "import": "submission.mesh_retrieval_v1.mesh_retrieval_runtime",
+      "resolved_source": "submission/mesh_retrieval_v1/mesh_retrieval_runtime.py"
+    },
+    {
+      "from": "vlm_lite/fact_rerank_runtime_v1.py",
+      "import": "vlm_lite.production_runtime_v1",
+      "resolved_source": "vlm_lite/production_runtime_v1.py"
+    },
+    {
+      "from": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+      "import": "vlm_lite.per_case_fail_open_runtime_v1",
+      "resolved_source": "vlm_lite/per_case_fail_open_runtime_v1.py"
+    }
+  ],
+  "dynamic_import_calls": [],
+  "external_import_top_levels": [
+    "PIL",
+    "SimpleITK",
+    "__future__",
+    "collections",
+    "contextlib",
+    "dataclasses",
+    "difflib",
+    "glob",
+    "hashlib",
+    "json",
+    "math",
+    "numbers",
+    "numpy",
+    "os",
+    "parsing",
+    "pathlib",
+    "random",
+    "re",
+    "resource",
+    "scipy",
+    "signal",
+    "sklearn",
+    "struct",
+    "submission",
+    "sys",
+    "threading",
+    "time",
+    "tooth_finding_gate_v1",
+    "torch",
+    "transformers",
+    "typing",
+    "vlm_lite",
+    "warnings"
+  ],
+  "layout_aliases": {
+    "tooth_finding_gate_v1.py": "Developer-layout byte-preserving copy; the submitted zipapp loads the same source from its internal member."
+  },
+  "unresolved_project_imports": [],
+  "runtime_resource_files_included": false,
+  "entrypoint_format": "Python zipapp containing __main__.py and tooth_finding_gate_v1.py",
+  "entrypoint_current_source_equivalent": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+  "archive_zipapp_source_members": [
+    {
+      "zip_member": "__main__.py",
+      "bytes": 4999,
+      "sha256": "83664a05933ccff88e17a81eb620cf7bf36111c2d8782ff200731564e009a799",
+      "snapshot_source_path": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+      "status": "matched"
+    },
+    {
+      "zip_member": "tooth_finding_gate_v1.py",
+      "bytes": 14885,
+      "sha256": "84fafdecfc6b0de42134472b08af2dac2aa2fb76b431c34058f95260e67bb430",
+      "snapshot_source_path": "vlm_lite/tooth_finding_gate_v1.py",
+      "status": "matched"
+    }
+  ],
+  "source_container_comparison": "../SOURCE_CONTAINER_COMPARISON.json"
+}

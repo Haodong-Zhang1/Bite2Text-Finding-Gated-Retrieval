@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "comparison_date": "2026-10-07",
+  "archive_relative_path": "experiments/bitevlm_lite_v3_attempt05_submission_20260816/export_v1/bitevlm-lite-v3-attempt05-debug-20260816.image.tar.gz",
+  "archive_bytes": 386864355,
+  "archive_format": "docker-save",
+  "container_config": {
+    "entrypoint": [
+      "python",
+      "inference.py"
+    ],
+    "command": null,
+    "working_directory": "/opt/app"
+  },
+  "ordered_layer_count": 17,
+  "scanned_tar_blob_count": 17,
+  "missing_layer_count": 0,
+  "applicable_whiteout_operation_count": 0,
+  "compared_file_count": 18,
+  "matched_file_count": 18,
+  "different_file_count": 0,
+  "missing_file_count": 0,
+  "files": [
+    {
+      "snapshot_path": "baselines/vc_fulltrain_model.py",
+      "container_path": "/opt/app/baselines/vc_fulltrain_model.py",
+      "snapshot_sha256": "77c86db2c1ccc051f31b0e9b0db2d3ea3c6c4ba188e43af2569f342372865829",
+      "container_sha256": "77c86db2c1ccc051f31b0e9b0db2d3ea3c6c4ba188e43af2569f342372865829",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "baselines/vc_sentence_surgery_runtime.py",
+      "container_path": "/opt/app/baselines/vc_sentence_surgery_runtime.py",
+      "snapshot_sha256": "7cd400f9d8de337a56682081ea883e1ddaf0548d96dc4e5b736bacde6af4a02a",
+      "container_sha256": "7cd400f9d8de337a56682081ea883e1ddaf0548d96dc4e5b736bacde6af4a02a",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "parsing/schema_parser.py",
+      "container_path": "/opt/app/parsing/schema_parser.py",
+      "snapshot_sha256": "17098201257772d44d5d098e6539f5e455708dcbc581519f421dacd4fe71bdd5",
+      "container_sha256": "17098201257772d44d5d098e6539f5e455708dcbc581519f421dacd4fe71bdd5",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "submission/bitevlm_lite_v2/requirements.txt",
+      "container_path": "/opt/app/requirements.txt",
+      "snapshot_sha256": "a5640b429d57d132df24f1977bb7dcc3a48bd8ebe93a889c75ae952c23603c16",
+      "container_sha256": "a5640b429d57d132df24f1977bb7dcc3a48bd8ebe93a889c75ae952c23603c16",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "submission/__init__.py",
+      "container_path": "/opt/app/submission/__init__.py",
+      "snapshot_sha256": "6d03140b70b0ec66ad7ce2ac43258861f90c88eb20d269b8cead02700b7fbc81",
+      "container_sha256": "6d03140b70b0ec66ad7ce2ac43258861f90c88eb20d269b8cead02700b7fbc81",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "submission/bitevlm_lite_v2/__init__.py",
+      "container_path": "/opt/app/submission/bitevlm_lite_v2/__init__.py",
+      "snapshot_sha256": "9490a765146d7c5bafed01c4728f8e83db2b292396f602f811f107104303c1bf",
+      "container_sha256": "9490a765146d7c5bafed01c4728f8e83db2b292396f602f811f107104303c1bf",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "submission/bitevlm_lite_v2/inference.py",
+      "container_path": "/opt/app/submission/bitevlm_lite_v2/inference.py",
+      "snapshot_sha256": "d5b3fef97715c237bfcfaafca17a54907f28f072429e3f5cb6111c23e850d8f2",
+      "container_sha256": "d5b3fef97715c237bfcfaafca17a54907f28f072429e3f5cb6111c23e850d8f2",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "submission/mesh_retrieval_v1/__init__.py",
+      "container_path": "/opt/app/submission/mesh_retrieval_v1/__init__.py",
+      "snapshot_sha256": "7b250cb530e0c7f52a6617b6f4fa94d5dce2467d379be2e003964a79c5a40d40",
+      "container_sha256": "7b250cb530e0c7f52a6617b6f4fa94d5dce2467d379be2e003964a79c5a40d40",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "submission/mesh_retrieval_v1/mesh_retrieval_runtime.py",
+      "container_path": "/opt/app/submission/mesh_retrieval_v1/mesh_retrieval_runtime.py",
+      "snapshot_sha256": "d58d52e27148200fc49d5ba315c0ea2ca4954ebe44e56e2d9ca56ddb32489ab3",
+      "container_sha256": "d58d52e27148200fc49d5ba315c0ea2ca4954ebe44e56e2d9ca56ddb32489ab3",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "vlm_lite/__init__.py",
+      "container_path": "/opt/app/vlm_lite/__init__.py",
+      "snapshot_sha256": "fc46f5d163e6f3f48e7dc1bd950a0bb6e6c3d53a42cd2435a0c398f7af6b05b5",
+      "container_sha256": "fc46f5d163e6f3f48e7dc1bd950a0bb6e6c3d53a42cd2435a0c398f7af6b05b5",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "vlm_lite/fact_rerank_runtime_v1.py",
+      "container_path": "/opt/app/vlm_lite/fact_rerank_runtime_v1.py",
+      "snapshot_sha256": "f27a58c2e4c3cee15079cabde42e6288f1213c569b1db53525568072bf0b08f0",
+      "container_sha256": "f27a58c2e4c3cee15079cabde42e6288f1213c569b1db53525568072bf0b08f0",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "vlm_lite/g0_probability_runtime_v2.py",
+      "container_path": "/opt/app/vlm_lite/g0_probability_runtime_v2.py",
+      "snapshot_sha256": "59627a35fb471229158cf19b7c6fa5833c9b34bb82cc7d338fff7ebbebbf69a8",
+      "container_sha256": "59627a35fb471229158cf19b7c6fa5833c9b34bb82cc7d338fff7ebbebbf69a8",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "vlm_lite/per_case_fail_open_runtime_v1.py",
+      "container_path": "/opt/app/vlm_lite/per_case_fail_open_runtime_v1.py",
+      "snapshot_sha256": "2745f815aa9f3264da0e016a70c130a91d0d8ba712e63a74ee2c158dacbd09a6",
+      "container_sha256": "2745f815aa9f3264da0e016a70c130a91d0d8ba712e63a74ee2c158dacbd09a6",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "vlm_lite/photo_encoder_runtime_v1.py",
+      "container_path": "/opt/app/vlm_lite/photo_encoder_runtime_v1.py",
+      "snapshot_sha256": "ae33894df09518f478942f69f5c4ee8cce62fb774593b7d3a774311e925c68ce",
+      "container_sha256": "ae33894df09518f478942f69f5c4ee8cce62fb774593b7d3a774311e925c68ce",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "vlm_lite/production_runtime_v1.py",
+      "container_path": "/opt/app/vlm_lite/production_runtime_v1.py",
+      "snapshot_sha256": "40b251c6b60e29a68162ea5998f97050f1cc4b6c33c5ebbce4fc455364b11217",
+      "container_sha256": "40b251c6b60e29a68162ea5998f97050f1cc4b6c33c5ebbce4fc455364b11217",
+      "status": "matched"
+    },
+    {
+      "snapshot_path": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+      "container_path": "/opt/app/inference.py!/__main__.py",
+      "snapshot_sha256": "83664a05933ccff88e17a81eb620cf7bf36111c2d8782ff200731564e009a799",
+      "container_sha256": "83664a05933ccff88e17a81eb620cf7bf36111c2d8782ff200731564e009a799",
+      "status": "matched",
+      "container_representation": "zip_member"
+    },
+    {
+      "snapshot_path": "vlm_lite/tooth_finding_gate_v1.py",
+      "container_path": "/opt/app/inference.py!/tooth_finding_gate_v1.py",
+      "snapshot_sha256": "84fafdecfc6b0de42134472b08af2dac2aa2fb76b431c34058f95260e67bb430",
+      "container_sha256": "84fafdecfc6b0de42134472b08af2dac2aa2fb76b431c34058f95260e67bb430",
+      "status": "matched",
+      "container_representation": "zip_member"
+    },
+    {
+      "snapshot_path": "inference.py",
+      "container_path": "/opt/app/inference.py",
+      "snapshot_sha256": "f06c42186afd04eed43e35116d157556cb5a04c4f69a108460af922a985cdcc3",
+      "container_sha256": "f06c42186afd04eed43e35116d157556cb5a04c4f69a108460af922a985cdcc3",
+      "status": "matched",
+      "container_representation": "raw_zipapp"
+    }
+  ],
+  "training_core_not_required_in_inference_image": [
+    "vlm_lite/photo_residual.py"
+  ],
+  "validation_scope": "Read-only streaming archive/layer SHA-256 comparison. Ordered layer overrides and relevant whiteouts were applied. No archive extraction, container execution or model run. Model resources and report content were not read into comparison output.",
+  "elapsed_seconds": 5.1,
+  "initial_layout_comparison": {
+    "compared_file_count": 17,
+    "matched_file_count": 15,
+    "different_file_count": 1,
+    "missing_file_count": 1,
+    "interpretation": "The raw ZIP app was initially compared with unpacked __main__.py, and its internal tooth-gate module was initially sought as a standalone file."
+  },
+  "container_entry_format": "Python zipapp",
+  "zip_source_members": [
+    {
+      "zip_member": "__main__.py",
+      "bytes": 4999,
+      "sha256": "83664a05933ccff88e17a81eb620cf7bf36111c2d8782ff200731564e009a799",
+      "snapshot_source_path": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+      "status": "matched"
+    },
+    {
+      "zip_member": "tooth_finding_gate_v1.py",
+      "bytes": 14885,
+      "sha256": "84fafdecfc6b0de42134472b08af2dac2aa2fb76b431c34058f95260e67bb430",
+      "snapshot_source_path": "vlm_lite/tooth_finding_gate_v1.py",
+      "status": "matched"
+    }
+  ],
+  "conclusion": "No source-version drift in the checked final runtime closure: 15 standalone source/dependency files and both ZIP-app source members are byte-identical to the current snapshot; the 20,128-byte submitted ZIP entry is also preserved byte-for-byte."
+}

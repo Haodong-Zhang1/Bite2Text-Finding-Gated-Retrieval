@@ -1,0 +1,25 @@
+# Unbuilt rebuild proposal for the current implemented attempt05 runtime.
+# This is not the submitted image and does not include model resources.
+FROM --platform=linux/amd64 python:3.11-slim-bookworm@sha256:b18992999dbe963a45a8a4da40ac2b1975be1a776d939d098c647482bcad5cba
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    HF_HUB_OFFLINE=1 \
+    HF_HOME=/tmp/huggingface \
+    TRANSFORMERS_OFFLINE=1 \
+    XDG_CACHE_HOME=/tmp/.cache \
+    MKL_NUM_THREADS=1 \
+    NUMEXPR_NUM_THREADS=1 \
+    OMP_NUM_THREADS=1 \
+    OPENBLAS_NUM_THREADS=1 \
+    PYTHONHASHSEED=20260804 \
+    VECLIB_MAXIMUM_THREADS=1
+
+RUN groupadd -r user && useradd -m --no-log-init -r -g user user
+USER user
+WORKDIR /opt/app
+COPY --chown=user:user submission/bitevlm_lite_v2/requirements.txt /opt/app/inference-requirements.txt
+RUN python -m pip install --user --no-cache-dir --no-color --requirement /opt/app/inference-requirements.txt
+RUN python -m pip check
+COPY --chown=user:user . /opt/app/
+ENTRYPOINT ["python", "inference.py"]

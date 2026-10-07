@@ -1,0 +1,26 @@
+{
+  "validation_kind": "Static source preparation only",
+  "source_copy_count": 21,
+  "source_byte_equality_checks_passed": 21,
+  "python_ast_files_parsed": 18,
+  "unresolved_project_import_count": 0,
+  "dynamic_import_call_count": 0,
+  "privacy_match_counts": {
+    "personal_absolute_paths": 0,
+    "email_addresses": 0,
+    "case_like_identifiers": 0,
+    "credential_literals": 0,
+    "ipv4_addresses": 0
+  },
+  "privacy_screening_limitation": "Static pattern screening is not a formal anonymisation guarantee. No dataset or runtime resource files were included.",
+  "model_run": false,
+  "training_run": false,
+  "container_build": false,
+  "dependency_install": false,
+  "privacy_screening_file_count": 27,
+  "privacy_screening_scope": "All 26 textual snapshot files plus both source members of the one binary ZIP app.",
+  "container_entry_byte_equality_checks_passed": 1,
+  "container_source_member_byte_equality_checks_passed": 2,
+  "archive_zip_python_members_parsed": 2,
+  "container_source_comparison_passed": true
+}

@@ -1,0 +1,33 @@
+FROM --platform=linux/amd64 python:3.11-slim-bookworm@sha256:b18992999dbe963a45a8a4da40ac2b1975be1a776d939d098c647482bcad5cba AS bitevlm_lite_v3_amd64
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    HF_HUB_OFFLINE=1 \
+    HF_HOME=/tmp/huggingface \
+    TRANSFORMERS_OFFLINE=1 \
+    XDG_CACHE_HOME=/tmp/.cache \
+    MKL_NUM_THREADS=1 \
+    NUMEXPR_NUM_THREADS=1 \
+    OMP_NUM_THREADS=1 \
+    OPENBLAS_NUM_THREADS=1 \
+    PYTHONHASHSEED=20260804 \
+    VECLIB_MAXIMUM_THREADS=1
+LABEL gc_upload_version="2026-08-13-bitevlm-lite-v3"
+
+RUN groupadd -r user && useradd -m --no-log-init -r -g user user
+USER user
+WORKDIR /opt/app
+
+COPY --chown=user:user submission/bitevlm_lite_v2/requirements.txt /opt/app/
+RUN python -m pip install --user --no-cache-dir --no-color --requirement /opt/app/requirements.txt
+RUN python -m pip check
+
+COPY --chown=user:user submission/bitevlm_lite_v3/inference.py /opt/app/inference.py
+COPY --chown=user:user baselines/vc_fulltrain_model.py baselines/vc_sentence_surgery_runtime.py /opt/app/baselines/
+COPY --chown=user:user parsing/schema_parser.py /opt/app/parsing/
+COPY --chown=user:user submission/__init__.py /opt/app/submission/__init__.py
+COPY --chown=user:user submission/bitevlm_lite_v2/__init__.py submission/bitevlm_lite_v2/inference.py /opt/app/submission/bitevlm_lite_v2/
+COPY --chown=user:user submission/mesh_retrieval_v1/__init__.py submission/mesh_retrieval_v1/mesh_retrieval_runtime.py /opt/app/submission/mesh_retrieval_v1/
+COPY --chown=user:user vlm_lite/__init__.py vlm_lite/g0_probability_runtime_v2.py vlm_lite/photo_encoder_runtime_v1.py vlm_lite/production_runtime_v1.py vlm_lite/fact_rerank_runtime_v1.py vlm_lite/per_case_fail_open_runtime_v1.py /opt/app/vlm_lite/
+
+ENTRYPOINT ["python", "inference.py"]

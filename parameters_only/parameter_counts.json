@@ -1,0 +1,7 @@
+{
+  "active_fitted_total": 67902,
+  "active_geometry_fitted_parameters": 3390,
+  "active_photo_residual_parameters": 64512,
+  "frozen_dinov2_parameters": 22056576,
+  "legacy_archived_vc_classifier_parameters_excluded": 3390
+}

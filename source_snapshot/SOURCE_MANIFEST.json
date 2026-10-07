@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-10-07",
+  "scope": "Current implemented attempt05 inference plus selected training core",
+  "files": [
+    {
+      "path": "baselines/vc_fulltrain_model.py",
+      "source_relative_path": "baselines/vc_fulltrain_model.py",
+      "bytes": 25626,
+      "sha256": "77c86db2c1ccc051f31b0e9b0db2d3ea3c6c4ba188e43af2569f342372865829",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "baselines/vc_sentence_surgery_runtime.py",
+      "source_relative_path": "baselines/vc_sentence_surgery_runtime.py",
+      "bytes": 21866,
+      "sha256": "7cd400f9d8de337a56682081ea883e1ddaf0548d96dc4e5b736bacde6af4a02a",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "parsing/schema_parser.py",
+      "source_relative_path": "parsing/schema_parser.py",
+      "bytes": 10406,
+      "sha256": "17098201257772d44d5d098e6539f5e455708dcbc581519f421dacd4fe71bdd5",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "provenance/Dockerfile.v3.reference",
+      "source_relative_path": "submission/bitevlm_lite_v3/Dockerfile",
+      "bytes": 1767,
+      "sha256": "11d35a4478dfffb4ae2c0ce83da4902d2a14e9116f8c0f761c3765a7effc469e",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "requirements.txt",
+      "source_relative_path": "requirements.txt",
+      "bytes": 137,
+      "sha256": "08b01ade9a44aa266e3d02f887786df98e09ed8c541e542929965f78786a451a",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "submission/__init__.py",
+      "source_relative_path": "submission/__init__.py",
+      "bytes": 58,
+      "sha256": "6d03140b70b0ec66ad7ce2ac43258861f90c88eb20d269b8cead02700b7fbc81",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "submission/bitevlm_lite_v2/__init__.py",
+      "source_relative_path": "submission/bitevlm_lite_v2/__init__.py",
+      "bytes": 55,
+      "sha256": "9490a765146d7c5bafed01c4728f8e83db2b292396f602f811f107104303c1bf",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "submission/bitevlm_lite_v2/inference.py",
+      "source_relative_path": "submission/bitevlm_lite_v2/inference.py",
+      "bytes": 11234,
+      "sha256": "d5b3fef97715c237bfcfaafca17a54907f28f072429e3f5cb6111c23e850d8f2",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "submission/bitevlm_lite_v2/requirements.txt",
+      "source_relative_path": "submission/bitevlm_lite_v2/requirements.txt",
+      "bytes": 201,
+      "sha256": "a5640b429d57d132df24f1977bb7dcc3a48bd8ebe93a889c75ae952c23603c16",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+      "source_relative_path": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+      "bytes": 4999,
+      "sha256": "83664a05933ccff88e17a81eb620cf7bf36111c2d8782ff200731564e009a799",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "submission/mesh_retrieval_v1/__init__.py",
+      "source_relative_path": "submission/mesh_retrieval_v1/__init__.py",
+      "bytes": 67,
+      "sha256": "7b250cb530e0c7f52a6617b6f4fa94d5dce2467d379be2e003964a79c5a40d40",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "submission/mesh_retrieval_v1/mesh_retrieval_runtime.py",
+      "source_relative_path": "submission/mesh_retrieval_v1/mesh_retrieval_runtime.py",
+      "bytes": 14837,
+      "sha256": "d58d52e27148200fc49d5ba315c0ea2ca4954ebe44e56e2d9ca56ddb32489ab3",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "tooth_finding_gate_v1.py",
+      "source_relative_path": "vlm_lite/tooth_finding_gate_v1.py",
+      "bytes": 14885,
+      "sha256": "84fafdecfc6b0de42134472b08af2dac2aa2fb76b431c34058f95260e67bb430",
+      "copy_type": "byte_preserving_alias"
+    },
+    {
+      "path": "vlm_lite/__init__.py",
+      "source_relative_path": "vlm_lite/__init__.py",
+      "bytes": 77,
+      "sha256": "fc46f5d163e6f3f48e7dc1bd950a0bb6e6c3d53a42cd2435a0c398f7af6b05b5",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "vlm_lite/fact_rerank_runtime_v1.py",
+      "source_relative_path": "vlm_lite/fact_rerank_runtime_v1.py",
+      "bytes": 4133,
+      "sha256": "f27a58c2e4c3cee15079cabde42e6288f1213c569b1db53525568072bf0b08f0",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "vlm_lite/g0_probability_runtime_v2.py",
+      "source_relative_path": "vlm_lite/g0_probability_runtime_v2.py",
+      "bytes": 6060,
+      "sha256": "59627a35fb471229158cf19b7c6fa5833c9b34bb82cc7d338fff7ebbebbf69a8",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "vlm_lite/per_case_fail_open_runtime_v1.py",
+      "source_relative_path": "vlm_lite/per_case_fail_open_runtime_v1.py",
+      "bytes": 2326,
+      "sha256": "2745f815aa9f3264da0e016a70c130a91d0d8ba712e63a74ee2c158dacbd09a6",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "vlm_lite/photo_encoder_runtime_v1.py",
+      "source_relative_path": "vlm_lite/photo_encoder_runtime_v1.py",
+      "bytes": 16542,
+      "sha256": "ae33894df09518f478942f69f5c4ee8cce62fb774593b7d3a774311e925c68ce",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "vlm_lite/photo_residual.py",
+      "source_relative_path": "vlm_lite/photo_residual.py",
+      "bytes": 22802,
+      "sha256": "f5f5bbbe06edc15ce4e0ad3460bd21925d88f1fa09f615305030e9d15c966159",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "vlm_lite/production_runtime_v1.py",
+      "source_relative_path": "vlm_lite/production_runtime_v1.py",
+      "bytes": 24511,
+      "sha256": "40b251c6b60e29a68162ea5998f97050f1cc4b6c33c5ebbce4fc455364b11217",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "vlm_lite/tooth_finding_gate_v1.py",
+      "source_relative_path": "vlm_lite/tooth_finding_gate_v1.py",
+      "bytes": 14885,
+      "sha256": "84fafdecfc6b0de42134472b08af2dac2aa2fb76b431c34058f95260e67bb430",
+      "copy_type": "byte_preserving_source"
+    },
+    {
+      "path": "inference.py",
+      "bytes": 20128,
+      "sha256": "f06c42186afd04eed43e35116d157556cb5a04c4f69a108460af922a985cdcc3",
+      "copy_type": "byte_preserving_container_entry",
+      "archive_relative_path": "experiments/bitevlm_lite_v3_attempt05_submission_20260816/export_v1/bitevlm-lite-v3-attempt05-debug-20260816.image.tar.gz",
+      "archive_layer_member": "blobs/sha256/b26066cc37f65754bcec70d3bea36afa68ad66edc03d4ae000989f491cc8dc0f",
+      "layer_file_path": "opt/app/inference.py"
+    }
+  ],
+  "container_entrypoint": {
+    "path": "inference.py",
+    "format": "Python zipapp",
+    "command": [
+      "python",
+      "inference.py"
+    ],
+    "zip_source_members": [
+      {
+        "zip_member": "__main__.py",
+        "bytes": 4999,
+        "sha256": "83664a05933ccff88e17a81eb620cf7bf36111c2d8782ff200731564e009a799",
+        "snapshot_source_path": "submission/bitevlm_lite_v3_attempt05/__main__.py",
+        "status": "matched"
+      },
+      {
+        "zip_member": "tooth_finding_gate_v1.py",
+        "bytes": 14885,
+        "sha256": "84fafdecfc6b0de42134472b08af2dac2aa2fb76b431c34058f95260e67bb430",
+        "snapshot_source_path": "vlm_lite/tooth_finding_gate_v1.py",
+        "status": "matched"
+      }
+    ]
+  }
+}
